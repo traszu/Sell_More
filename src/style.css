@@ -88,8 +88,46 @@ header {
 
 /*MAIN SECTION OPENING*/
 
+.opening {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.opening_content {
+  margin-top: 130px;
+  text-align: center;
+}
 
+.opening_header {
+  font-family: var(--font-raleway);
+  font-size: 3.06rem;
+}
 
+.opening_heading {
+  font-size: 1rem;
+  font-family: var(--font-open-sans);
+  margin-top: 20px;
+  margin-bottom: 38px;
+}
+
+.opening_image {
+  height: auto;
+  width: 100%;
+}
+
+.opening_button {
+  display: inline-block;
+  color:white;
+  background-color: var(--color_blue);
+  border: none;
+  border-radius: 40px;
+  box-shadow: 5px 10px 14px #07ACE629;
+  padding-left: 157px;
+  padding-right: 157px;
+  padding-bottom: 22px;
+  padding-top: 22px;
+  font-weight: 700;
+}
 
 /*FOOTER*/
 
