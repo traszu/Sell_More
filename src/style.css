@@ -30,3 +30,59 @@
 body {
   font-family: var(--font-open-sans);
 }
+
+a {
+  text-decoration: none;
+}
+
+
+/*HEADER*/
+
+
+header {
+  height: 70px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-size: 32px;
+  color: var(--color_primary);
+  font-width: 300;
+  font-font: var(--font-raleway);
+}
+
+.header_nav {
+  display: flex;
+}
+
+.header_nav_element {
+  padding: 0 26px;
+}
+
+.header_nav_element:last-child {
+  padding-right: 0;
+}
+
+.header_nav_link {
+  color: var(--color-grey);
+  /*font-weight: 700;*/
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 28px 18px 22px;
+  border-bottom: 4px solid transparent;
+  letter-spacing: 3.28px;
+}
+
+.header_nav_link:hover {
+  color: var(--color_black);
+  border-color: var(--color_primary)
+}
+
+/*MAIN SECTION OPENING*/
