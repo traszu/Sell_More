@@ -128,6 +128,18 @@ header {
   padding-top: 22px;
   font-weight: 700;
 }
+/*MAIN SECTION STATISTIC*/
+.statistic {
+  margin-top: 100px;
+}
+
+.statistic_container {
+  display: flex;
+  margin: 100px auto 120px;
+  justify-content: space-between ;
+  max-width: 800px;
+
+}
 
 /*FOOTER*/
 
