@@ -127,8 +127,15 @@ header {
   font-weight: 700;
 }
 /*MAIN SECTION STATISTIC*/
+
 .statistic {
   margin-top: 100px;
+}
+
+h2 {
+  font-family: var(--font-raleway);
+  font-size: 36px;
+  text-align: center;
 }
 
 .statistic_container {
@@ -154,27 +161,61 @@ header {
   align-items: center;
 }
 
+.statistic_circle {
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+  position: relative;
+}
+
 .statistic_image {
   position: absolute;
+}
+
+.statistic_single:nth-child(1) .statistic_circle {
+  background-color: var(--color_redish);
+}
+
+.statistic_single:nth-child(1) .statistic_img {
+  top: 0;
+  left: 45%;
+}
+
+.statistic_single:nth-child(2) .statistic_circle {
+  background-color: var(--color_primary);
+}
+
+.statistics_single:nth-child(2) .statistics_img {
+  top: 14px;
+  left: 47%;
+}
+
+.statistic_single:nth-child(3) .statistic_circle {
+  background-color: var(--color_green);
+}
+
+.statistics_single:nth-child(3) .statistics_img {
+  top: 6px;
+  left: 50%;
 }
 
 .statistics__number {
   font-size: 1.25rem;
   font-weight: 800;
-  letter-spacing: 0.1875rem;
+  letter-spacing: 0.18rem;
   margin-top: 13px;
 }
 
 .statistic_description {
   color: var(--color_grey);
-  margin-top: 190px;
+  margin-top: 19px;
 }
 
 /*MAIN SECTION BENEFITS*/
 
 .benefits {
   padding: 100px 0;
-  background-color: var(--color-light-grey);
+  background-color: var(--color_light-grey);
 
 }
 
@@ -185,7 +226,6 @@ header {
   align-items: flex-end;
   padding: 100px 0;
   border-radius: 5px;
-  background-color: var(--color_white);
   margin-bottom: 100px;
 }
 
@@ -335,6 +375,12 @@ header {
   margin-top: 55px;
 }
 
+
+/*MAIN PRICING SECTION*/
+
+.pricing_boxes {
+  display: flex;
+}
 
 /*FOOTER*/
 
