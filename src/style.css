@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -10,7 +11,7 @@
   --color_green: #55DFB4;
   --color_black: #000000;
   --color_dark_blue: #13253B;
-  --color_grey: #A5A5A5;
+  --color_grey: #545050;
   --color_light-grey: #F7F7F7;
   --color_white: #FFFFFF;
   --color_blue: #07ACE6;
@@ -67,9 +68,9 @@ header {
   padding: 0 26px;
 }
 
-/*.header_nav_element:last-child {*/
-/*  padding-right: 0;*/
-/*}*/
+.header_nav_element:last-child {
+  padding-right: 0;
+}
 
 .header_nav_link {
   color: var(--color_grey);
@@ -171,42 +172,60 @@ header {
 
 /*MAIN SECTION BENEFITS*/
 
-
-/*O CO TUTAJ CHODZI PO CO TO ?*/
-
 .benefits {
   padding: 100px 0;
-}
-
-.benefits_container {
-  background-color: var(--color_light-grey);
-  padding: 0 100px;
+  background-color: var(--color-light-grey);
 
 }
-/*Jak odsunąć tą sekcję od góry?*/
 
 .benefits_single {
   background-color: var(--color_white);
-  border: 1px solid var(--color_grey);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 37px;
+  padding: 100px 0;
   border-radius: 5px;
+  background-color: var(--color_white);
+  margin-bottom: 100px;
+}
+
+.benefits_title {
+  font-size: 36px;
 }
 
 .benefits_container {
-  padding: 0 100px;
+  padding: 100px;
+  margin-top: 100px;
+  background-color: #F7F7F7;
 }
 .benefits_text {
   max-width: 416px;
   margin: 90px 36px;
 }
-.benefits_text::after {
+
+.benefits_text_red::after {
   content: '';
   width: 332px;
   height: 6px;
   background-color: var(--color_redish);
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.benefits_text_blue::after {
+  content: '';
+  width: 332px;
+  height: 6px;
+  background-color: var(--color_blue);
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.benefits_text_green::after {
+  content: '';
+  width: 332px;
+  height: 6px;
+  background-color: var(--color_green);
   display: inline-block;
   margin-top: 50px;
 }
@@ -225,10 +244,6 @@ header {
   position: relative;
   z-index: 2;
 }
-
-/*.benefits_single_notebook{*/
-/*  color: var(--color_redish);*/
-/*}*/
 
 .benefits_single_notebook .benefits_image {
   margin-right: 117px;
@@ -265,10 +280,11 @@ header {
   height: auto;
 }
 
-/*.benefits_single_phone .benefits_image img {*/
-/*  width: 426px;*/
-/*  height: auto;*/
-/*}*/
+.benefits_single_phone .benefits_image img {
+  width: 426px;
+  height: auto;
+}
+
 
 .benefits_single_phone .benefits_image::before {
   content: '';
@@ -291,13 +307,17 @@ header {
   display: flex;
 }
 
+.benefits_double > div {
+  margin-bottom: 0;
+}
+
 .benefits_single_text {
   max-width: 620px;
 }
 
 .benefits_single_text .benefits_text {
   max-width: none;
-  margin-top: 70px 35px;
+  margin: 70px 35px;
 }
 
 .benefits_single_img {
