@@ -480,14 +480,14 @@ h2 {
   box-shadow: 5px 1px 27px var(--color_primary_shadow);
 }
 
-.pricing__box_professional .pricing_type {
+.pricing_box_professional .pricing_type {
   font-size: 1.3125rem;
 }
 
 .pricing_box_professional .pricing_item {
   margin-bottom: 25px;
 
-.pricing__box_premium {
+.pricing_box_premium {
   --accent-color: var(--color_green);
 }
 
