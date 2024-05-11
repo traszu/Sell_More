@@ -169,9 +169,157 @@ header {
   margin-top: 190px;
 }
 
+/*MAIN SECTION BENEFITS*/
+
+
+/*O CO TUTAJ CHODZI PO CO TO ?*/
+
+.benefits {
+  padding: 100px 0;
+}
+
+.benefits_container {
+  background-color: var(--color_light-grey);
+  padding: 0 100px;
+
+}
+/*Jak odsunąć tą sekcję od góry?*/
+
+.benefits_single {
+  background-color: var(--color_white);
+  border: 1px solid var(--color_grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 37px;
+  border-radius: 5px;
+}
+
+.benefits_container {
+  padding: 0 100px;
+}
+.benefits_text {
+  max-width: 416px;
+  margin: 90px 36px;
+}
+.benefits_text::after {
+  content: '';
+  width: 332px;
+  height: 6px;
+  background-color: var(--color_redish);
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.benefits_description {
+  margin-top: 30px;
+  line-height: 1.375rem;
+}
+ /*SKĄD TA WARTOŚĆ I DLACZEGO REM*!*/
+
+.benefits_image {
+  position: relative;
+}
+
+.benefits_image img {
+  position: relative;
+  z-index: 2;
+}
+
+/*.benefits_single_notebook{*/
+/*  color: var(--color_redish);*/
+/*}*/
+
+.benefits_single_notebook .benefits_image {
+  margin-right: 117px;
+  margin-bottom: 38px;
+}
+.benefits_single_notebook .benefits_image::before {
+  content: '';
+  width: 180px;
+  height: 180px;
+  background-color: var(--color_redish);
+  display: block;
+  border-radius: 40px;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  transform: rotate(45deg);
+}
+
+
+.benefits_single_notebook img{
+  width: 386px;
+  height: auto;
+}
+
+
+
+.benefits_single_phone {
+  flex-direction: row-reverse;
+  padding: 0 20px 0 70px;
+}
+
+.benefits_single_phone img {
+  width: 386px;
+  height: auto;
+}
+
+/*.benefits_single_phone .benefits_image img {*/
+/*  width: 426px;*/
+/*  height: auto;*/
+/*}*/
+
+.benefits_single_phone .benefits_image::before {
+  content: '';
+  width: 320px;
+  height: 320px;
+  background-color: var(--color_blue);
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -50px;
+}
+
+.benefits_single_phone .benefits_text {
+  margin: 70px 0;
+}
+
+
+.benefits_double {
+  display: flex;
+}
+
+.benefits_single_text {
+  max-width: 620px;
+}
+
+.benefits_single_text .benefits_text {
+  max-width: none;
+  margin-top: 70px 35px;
+}
+
+.benefits_single_img {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color_green);
+  border: none;
+  margin-left: 60px;
+}
+
+.benefits_single_img img {
+  height: auto;
+  width: 295px;
+  margin-top: 55px;
+}
 
 
 /*FOOTER*/
+
+
+
 
 .footer {
   box-shadow: 0 -5px 40px #00000029;
