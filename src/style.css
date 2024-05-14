@@ -146,8 +146,7 @@ h2 {
 }
 
 .statistic_header {
-  font-family: var(--font-raleway);
-  font-size: 2rem;
+
   text-align: center;
 }
 
@@ -185,7 +184,7 @@ h2 {
   background-color: var(--color_primary);
 }
 
-.statistics_single:nth-child(2) .statistics_img {
+.statistic_single:nth-child(2) .statistic_img {
   top: 14px;
   left: 47%;
 }
@@ -199,7 +198,7 @@ h2 {
   left: 50%;
 }
 
-.statistics__number {
+.statistic_number {
   font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: 0.18rem;
@@ -216,31 +215,31 @@ h2 {
 .benefits {
   padding: 100px 0;
   background-color: var(--color_light-grey);
-
 }
 
 .benefits_single {
   background-color: var(--color_white);
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 100px 0;
-  border-radius: 5px;
-  margin-bottom: 100px;
+  margin-bottom: 37px;
+  margin-top: 37px;
 }
 
-.benefits_title {
-  font-size: 36px;
+/*.benefits_title {*/
+/*  font-size: 36px;*/
+/*}*/
+
+.benefits_text {
+  box-sizing: content-box;
+  max-width: 415px;
+  margin: 90px 36px;
 }
 
 .benefits_container {
-  padding: 100px;
-  margin-top: 100px;
-  background-color: #F7F7F7;
-}
-.benefits_text {
-  max-width: 416px;
-  margin: 90px 36px;
+  padding: 0 100px;
 }
 
 .benefits_text_red::after {
@@ -274,7 +273,7 @@ h2 {
   margin-top: 30px;
   line-height: 1.375rem;
 }
- /*SKĄD TA WARTOŚĆ I DLACZEGO REM*!*/
+/* !*SKĄD TA WARTOŚĆ I DLACZEGO REM*!*!*/
 
 .benefits_image {
   position: relative;
@@ -289,6 +288,8 @@ h2 {
   margin-right: 117px;
   margin-bottom: 38px;
 }
+
+
 .benefits_single_notebook .benefits_image::before {
   content: '';
   width: 180px;
@@ -303,9 +304,11 @@ h2 {
 }
 
 
-.benefits_single_notebook img{
+.benefits_single_notebook .benefits_image img {
   width: 386px;
   height: auto;
+  position: relative;
+  z-index: 2;
 }
 
 
@@ -313,11 +316,6 @@ h2 {
 .benefits_single_phone {
   flex-direction: row-reverse;
   padding: 0 20px 0 70px;
-}
-
-.benefits_single_phone img {
-  width: 386px;
-  height: auto;
 }
 
 .benefits_single_phone .benefits_image img {
@@ -345,28 +343,30 @@ h2 {
 
 .benefits_double {
   display: flex;
+  --color: var(--color_green)
 }
 
-.benefits_double > div {
-  margin-bottom: 0;
-}
+/*.benefits_double > div {*/
+/*  margin-bottom: 0;*/
+/*}*/
 
-.benefits_single_text {
-  max-width: 620px;
-}
+/*.benefits_single_text {*/
+/*  max-width: 620px;*/
+/*}*/
 
-.benefits_single_text .benefits_text {
-  max-width: none;
-  margin: 70px 35px;
-}
+/*.benefits_single_text .benefits_text {*/
+/*  max-width: none;*/
+/*  margin: 70px 35px;*/
+/*}*/
 
 .benefits_single_img {
   flex-grow: 1;
   display: flex;
   justify-content: center;
-  background-color: var(--color_green);
+  background-color: var(--color);
   border: none;
   margin-left: 60px;
+  align-items: center;
 }
 
 .benefits_single_img img {
