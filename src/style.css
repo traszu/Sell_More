@@ -71,7 +71,7 @@ header {
 }
 
 .header_nav_link {
-  color: var(--color_light-grey);
+  color: var(--color_grey);
   font-weight: 700;
   font-size: 11px;
   text-transform: uppercase;
@@ -625,6 +625,7 @@ h2 {
   /*padding: 16px 65px;*/
   border-radius: var(--button-radius);
   background-color: var(--color_primary);
+  border-style: none;
 }
 /*FOOTER*/
 
