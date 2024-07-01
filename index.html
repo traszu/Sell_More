@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="src/reset.css">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="scss/main.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,55 +17,62 @@
 
 <!--  HEADER-->
 
-  <header class="header">
-    <div class="header_container container">
-      <a href="#" class="logo">BestShop</a>
-      <nav>
-        <ul class="header_nav">
-          <li class="header_nav_element"><a href="#" class="header_nav_link">Why us</a></li>
-          <li class="header_nav_element"><a href="#" class="header_nav_link">Benefits</a></li>
-          <li class="header_nav_element"><a href="#" class="header_nav_link">Prices</a></li>
-          <li class="header_nav_element"><a href="#" class="header_nav_link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="header">
+  <div class="header__container container">
+    <a href="#" class="logo">BestShop</a>
+    <nav>
+      <input type="checkbox" class="menu__btn" id="menu__btn">
+      <label for="menu__btn" class="menu__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="header__nav">
+        <li class="nav__element"><a href="#why-us" class="nav__link">Why us</a></li>
+        <li class="nav__element"><a href="#benefits" class="nav__link">Benefits</a></li>
+        <li class="nav__element"><a href="#prices" class="nav__link">Prices</a></li>
+        <li class="nav__element"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
 <!--MAIN SECTION OPENING-->
 <main>
     <section class="opening">
-             <div class="opening_content">
-               <h1 class="opening_header">Sell More!</h1>
-               <p class="opening_heading">Open shop on your platform and increase your sales</p>
-               <a href="#" class="opening_button">Open your shop</a>
+             <div class="opening__content">
+               <h1 class="opening__header">Sell More!</h1>
+               <p class="opening__heading">Open shop on your platform and increase your sales</p>
+               <a href="#" class="btn btn--large btn--primary ">Open your shop</a>
              </div>
-      <img src="assets/Background.png" alt="" class="opening_image">
+      <img src="assets/Background.png" alt="" class="opening__image">
     </section>
 
     <section class="statistic">
       <div class="container">
-      <h2 class="statistic_header">The most popular sales platform in country</h2>
-        <div class="statistic_container">
-          <div class="statistic_single">
-            <div class="statistic_circle">
-              <img src="assets/Person.svg" alt="" class="statistic_image">
+      <h2 class="statistic__header">The most popular sales platform in country</h2>
+        <div class="statistic__container">
+          <div class="statistic__single">
+            <div class="statistic__circle">
+              <img src="assets/Person.svg" alt="" class="statistic__image">
             </div>
-            <div class="statistic_number">100000+</div>
-            <div class="statistic_description">daily entries</div>
+            <div class="statistic__number">100000+</div>
+            <div class="statistic__description">daily entries</div>
           </div>
-          <div class="statistic_single">
-            <div class="statistic_circle">
-              <img src="assets/Eye.svg" alt="" class="statistic_image">
+          <div class="statistic__single">
+            <div class="statistic__circle">
+              <img src="assets/Eye.svg" alt="" class="statistic__image">
             </div>
-            <div class="statistic_number">2000000+</div>
-            <div class="statistic_description">seen products<br>every day</div>
+            <div class="statistic__number">2000000+</div>
+            <div class="statistic__description">seen products<br>every day</div>
           </div>
-          <div class="statistic_single">
-            <div class="statistic_circle">
-              <img src="assets/Catalog.svg" alt="" class="statistic_image">
+          <div class="statistic__single">
+            <div class="statistic__circle">
+              <img src="assets/Catalog.svg" alt="" class="statistic__image">
             </div>
-            <div class="statistic_number">10000+</div>
-            <div class="statistic_description">added posts<br>daily</div>
+            <div class="statistic__number">10000+</div>
+            <div class="statistic__description">added posts<br>daily</div>
           </div>
         </div>
       </div>
