@@ -1,4 +1,4 @@
-.statistic {
+.statistics {
   margin-top: 100px;
 
   @include mobile {
@@ -41,22 +41,22 @@
     }
 
     &:nth-child(1) {
-      .statistic__circle {
+      .statistics__circle {
         background-color: $color-redish;
       }
 
-      .statistic__img {
+      .statistics__img {
         top: 0;
         left: 45%;
       }
     }
 
     &:nth-child(2) {
-      .statistic__circle {
+      .statistics__circle {
         background-color: $color-primary;
       }
 
-      .statistic__img {
+      .statistics__img {
         top: 14px;
         left: 47%;
       }
@@ -64,11 +64,11 @@
 
 
     &:nth-child(3) {
-      .statistic__circle {
+      .statistics__circle {
         background-color: $color-green;
       }
 
-      .statistic__img {
+      .statistics__img {
         top: 6px;
         left: 50%;
       }
